@@ -77,12 +77,12 @@
                         @endif
                     @endauth
                 </div>
-                
+
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                Chupalo David
+                Chupalo David y Diego igual
                 </div>
 
                 <div class="links">
