@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
-        <style> 
+        <style>
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -82,11 +82,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-<<<<<<< HEAD
+
+
                 Me llamo Diego y soy fleto jijij
-=======
-               BUENO Y QUE PASA CON LOS SHISHIGAN
->>>>>>> ff1b86f0392eb771d7ee24948461c74c331dc928
+
+
                 </div>
 
                 <div class="links">
