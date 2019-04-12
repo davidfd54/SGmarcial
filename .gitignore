@@ -4,7 +4,7 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 /public/bower_components
-.env
+
 # -- Symfony2 -----------------------------------------
 app/bootstrap.php.cache
 app/bootstrap_cache.php.cache

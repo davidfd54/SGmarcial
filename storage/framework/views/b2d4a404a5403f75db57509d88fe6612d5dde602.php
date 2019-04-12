@@ -82,7 +82,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
+<<<<<<< HEAD
                 Me llamo Diego y soy fleto jijij
+=======
+               BUENO Y QUE PASA CON LOS SHISHIGAN
+>>>>>>> ff1b86f0392eb771d7ee24948461c74c331dc928
                 </div>
 
                 <div class="links">
