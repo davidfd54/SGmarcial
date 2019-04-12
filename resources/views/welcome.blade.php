@@ -82,7 +82,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                Chupalo David y Diego igual
+               BUENO Y QUE PASA CON LOS SHISHIGAN
                 </div>
 
                 <div class="links">
