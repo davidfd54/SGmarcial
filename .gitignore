@@ -4,7 +4,7 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 /public/bower_components
-,env
+.env
 # -- Symfony2 -----------------------------------------
 app/bootstrap.php.cache
 app/bootstrap_cache.php.cache
@@ -70,25 +70,3 @@ dist/
 nbdist/
 nbactions.xml
 nb-configuration.xml
-
-# -- Sistemas Operativos ------------------------------
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# Linux
-.*
-!.gitignore
-!.htaccess
-*~
-
-# Mac OS X
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
-.Spotlight-V100
-.Trashes
