@@ -199,11 +199,11 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Gestion. <span class="text-muted">A tu manera.</span></h2>
+            <p class="lead">Herramientas creadas bajo tus necesidades.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto"  src="{{ asset('img/pc.png') }}"  >
           </div>
         </div>
 
@@ -211,11 +211,11 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">organización digitalizada. <span class="text-muted">sin papeles.</span></h2>
+            <p class="lead">Gestion de competencias via online y movil que mejorarán tu experiencia en la labor de organizar torneos .</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto"  src="{{ asset('img/pc2.png') }}"  >
           </div>
         </div>
 
@@ -223,11 +223,11 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Inscripcion sin tramites. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Incripciones a torneos de manera comoda y sencilla</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto"  src="{{ asset('img/celu.png') }}"  >
           </div>
         </div>
 
@@ -245,49 +245,7 @@
       </footer>
     </main>
 
-  <!--      <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-        <div class="flex-center position-ref full-height">
-          <a class="navbar-brand" href="{{ url('/') }}">
-              {{ config('app.name', 'Laravel') }}
-          </a>
 
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-
-            @endif
-
-
-</div>
-</nav> -->
-            <div class="content">
-                <div class="title m-b-md">
-
-
-                Me llamo Diego y soy fleto jijij
-
-
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">CON MAYO</a>
-                    <a href="https://laracasts.com">otra prueba</a>
-                    <a href="https://laravel-news.com">Yerko</a>
-                    <a href="https://blog.laravel.com">Pool</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
         </div>
     </body>
 </html>
