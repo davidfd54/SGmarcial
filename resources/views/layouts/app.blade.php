@@ -11,30 +11,60 @@
 
     <!-- Scripts -->
 
-    <script src="{{ asset('js/jquery.min.js') }}" ></script>
+    <script src="{{ asset('js/jquery.min.js') }}"  ></script>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/adminlte.min.js') }}"></script>
+
+
+
 
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
-
-
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/Ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/css/AdminLTE.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/css/skins/skin-blue.min.css') }}" rel="stylesheet">
 
-    <link href="{{ asset('css/simple-sidebar.css') }}" rel="stylesheet">
+
+
+
+
+
+
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+
+    <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect. -->
+    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+
 </head>
-<body>
-    <div id="app">
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper" id="app">
         <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
+
+
                 </a>
+
+
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon">
 
@@ -61,6 +91,62 @@
                                 </li>
                             @endif
                         @else
+                        <li class="nav-item dropdown">
+                          <!-- Menu toggle button -->
+                          <a href="#" class="nav-link dropdown-togglem" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">10</span>
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li class="header">You have 10 notifications</li>
+                            <li>
+                              <!-- Inner Menu: contains the notifications -->
+                              <ul class="menu">
+                                <li><!-- start notification -->
+                                  <a href="#">
+                                    <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                  </a>
+                                </li>
+                                <!-- end notification -->
+                              </ul>
+                            </li>
+                            <li class="footer"><a href="#">View all</a></li>
+                          </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                          <!-- Menu toggle button -->
+                          <a href="#" class="nav-link dropdown-togglem" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-success">4</span>
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li class="header">You have 4 messages</li>
+                            <li>
+                              <!-- inner menu: contains the messages -->
+                              <ul class="menu">
+                                <li><!-- start message -->
+                                  <a href="#">
+                                    <div class="pull-left">
+                                      <!-- User Image -->
+                                      <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                    </div>
+                                    <!-- Message title and timestamp -->
+                                    <h4>
+                                      Support Team
+                                      <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                    </h4>
+                                    <!-- The message -->
+                                    <p>Why not buy a new awesome theme?</p>
+                                  </a>
+                                </li>
+                                <!-- end message -->
+                              </ul>
+                              <!-- /.menu -->
+                            </li>
+                            <li class="footer"><a href="#">See All Messages</a></li>
+                          </ul>
+                        </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -86,102 +172,12 @@
 
             @yield('content')
 
-    </div>
-
-  <hr>
-    <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
-
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-
-      <!-- Grid row -->
-      <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-md-4 mx-auto">
-
-          <!-- Content -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">  {{ config('app.name', 'Laravel') }}</h5>
-          <ul>
-            <li>Direccion : calle falsa </li>
-            <li>Telefono : +56997713665 </li>
-            <li>E-mail : surveynode@survey.cl</li>
-          </ul>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
-
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Facebook</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.trincherainformatica.com/"><img src="/img/facebook.png"></a>
-            </li>
-          </ul>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
-
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Twitter</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!"><img src="/img/twitter.png"></a>
-            </li>
-          </ul>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
-
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Linkedin</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!"><img src="/img/linkedin.png"></a>
-            </li>
-          </ul>
-
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!-- Grid row -->
-
-    </div>
-    <!-- Footer Links -->
-
-    <hr>
-
-    <hr>
 
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="https://www.CrossSurvey.com"> CrossSurvey.com</a>
-    </div>
-    <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
 
 
+
+
+  </div>
 </body>
 </html>

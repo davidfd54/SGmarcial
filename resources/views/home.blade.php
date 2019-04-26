@@ -1,57 +1,87 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="d-flex" id="wrapper">
+
 
   <!-- Sidebar -->
-  <div class="bg-light border-right" id="sidebar-wrapper">
-    <div class="sidebar-heading">Administracion </div>
-    <div class="list-group list-group-flush">
-      <a href="#" class="list-group-item list-group-item-action bg-light">Dashboar</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
-    </div>
-  </div>
-  <!-- /#sidebar-wrapper -->
 
-  <!-- Page Content -->
-  <div id="page-content-wrapper">
+
+<div class="wrapper">
 
 
 
+    <header class="main-header">
 
-  <img  id="menu-toggle" height="6%" width="3%" src="{{ asset('img/flecha.png') }}"  >
-
-
-    <div class="container-fluid">
-<!--
-aqui va el coontenido
--->
-
-
-      <h1 class="mt-4">Simple Sidebar</h1>
+      <!--Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+    </header>
 
 
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
 
-    </div>
-  </div>
-  <!-- /#page-content-wrapper -->
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+
+        <!-- Sidebar user panel (optional) -->
+<div class="wrapper">
 
 </div>
-<!-- /#wrapper -->
 
-<!-- Bootstrap core JavaScript -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">Gestion </li>
+          <!-- Optionally, you can add icons to the links -->
+          <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
+          <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+          <li class="treeview">
+            <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+              <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="#">Link in level 2</a></li>
+              <li><a href="#">Link in level 2</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- /.sidebar-menu -->
+      </section>
+      <!-- /.sidebar -->
+    </aside>
 
-<!-- Menu Toggle Script -->
-<script>
-  $("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-  });
-</script>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Page Header
+          <small>Optional description</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+          <li class="active">Here</li>
+        </ol>
+      </section>
 
+      <!-- Main content -->
+      <section class="content container-fluid">
+
+        <!--------------------------
+          | Your Page Content Here |
+          -------------------------->
+
+
+
+
+
+
+      </section>
+      <!-- /.content -->
+    </div>
+
+    </div>
 
 @endsection
