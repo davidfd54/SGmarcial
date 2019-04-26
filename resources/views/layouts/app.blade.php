@@ -103,7 +103,7 @@
           <!-- Content -->
           <h5 class="font-weight-bold text-uppercase mt-3 mb-4">  {{ config('app.name', 'Laravel') }}</h5>
           <ul>
-            <li>Direccion : Pasaje 11 sur #2524 </li>
+            <li>Direccion : calle falsa </li>
             <li>Telefono : +56997713665 </li>
             <li>E-mail : surveynode@survey.cl</li>
           </ul>

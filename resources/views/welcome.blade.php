@@ -239,10 +239,106 @@
 
 
       <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+    
+
+
+        <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+
+              <!-- Content -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">  {{ config('app.name', 'Laravel') }}</h5>
+              <ul>
+                <li>Direccion : calle falsa </li>
+                <li>Telefono : +56997713665 </li>
+                <li>E-mail : surveynode@survey.cl</li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Facebook</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.trincherainformatica.com/"><img src="/img/facebook.png"></a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Twitter</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!"><img src="/img/twitter.png"></a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Linkedin</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!"><img src="/img/linkedin.png"></a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <hr>
+
+        <hr>
+
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="https://www.CrossSurvey.com"> CrossSurvey.com</a>
+
+            <p class="float-right"><a href="#">Back to top</a></p>
+        </div>
+        <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+
+
     </main>
 
 
