@@ -171,14 +171,7 @@
     <hr>
 
     <!-- Call to action -->
-    <ul class="list-unstyled list-inline text-center py-2">
-      <li class="list-inline-item">
-        <h5 class="mb-1">Registrate Gratis</h5>
-      </li>
-      <li class="list-inline-item">
-        <a href="{{asset('register')}}" class="btn btn-primary btn-rounded">Ingresa!</a>
-      </li>
-    </ul>
+  
     <!-- Call to action -->
 
     <hr>
