@@ -87,5 +87,112 @@
             @yield('content')
 
     </div>
+
+  <hr>
+    <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 mx-auto">
+
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">  {{ config('app.name', 'Laravel') }}</h5>
+          <ul>
+            <li>Direccion : Pasaje 11 sur #2524 </li>
+            <li>Telefono : +56997713665 </li>
+            <li>E-mail : surveynode@survey.cl</li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Facebook</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.trincherainformatica.com/"><img src="/img/facebook.png"></a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Twitter</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!"><img src="/img/twitter.png"></a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Linkedin</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!"><img src="/img/linkedin.png"></a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <hr>
+
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Registrate Gratis</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="{{asset('register')}}" class="btn btn-primary btn-rounded">Ingresa!</a>
+      </li>
+    </ul>
+    <!-- Call to action -->
+
+    <hr>
+
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://www.CrossSurvey.com"> CrossSurvey.com</a>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</body>
 </body>
 </html>
