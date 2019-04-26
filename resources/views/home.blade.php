@@ -27,7 +27,9 @@
 
 
     <div class="container-fluid">
-
+<!--
+aqui va el coontenido
+-->
 
 
       <h1 class="mt-4">Simple Sidebar</h1>
