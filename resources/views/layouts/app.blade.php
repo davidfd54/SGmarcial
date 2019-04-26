@@ -193,6 +193,6 @@
     </footer>
     <!-- Footer -->
 
-</body>
+
 </body>
 </html>
