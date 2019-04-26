@@ -170,10 +170,6 @@
 
     <hr>
 
-    <!-- Call to action -->
-  
-    <!-- Call to action -->
-
     <hr>
 
 
