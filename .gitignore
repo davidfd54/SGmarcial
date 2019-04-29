@@ -3,7 +3,7 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-/public/bower_components
+
 
 # -- Symfony2 -----------------------------------------
 app/bootstrap.php.cache
@@ -13,10 +13,6 @@ app/config/parameters.yml
 app/cache/*
 app/logs/*
 
-web/bundles/*
-web/css/*
-web/js/*
-web/uploads/*
 
 # -- Composer -----------------------------------------
 composer.phar
@@ -66,7 +62,7 @@ tmtags
 nbproject/private/
 build/
 nbbuild/
-dist/
+
 nbdist/
 nbactions.xml
 nb-configuration.xml
