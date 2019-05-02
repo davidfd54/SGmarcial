@@ -61,6 +61,20 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <label for="tipoUsuario" class="col-md-4 col-form-label text-md-right">{{ __('Tipo Usuario') }}</label>
+
+                            <div class="col-md-6">
+                                <!--<input id="tipoUsuario" type="text" name="tipoUsuario" value="{{ old('tipoUsuario') }}" required autofocus>-->
+                                <select name="tipoUsuario" id="tipoUsuario">
+                                    <option value="adm">Administrador de Academia</option>
+                                    <option value="depor">Deportista</option>
+                                    <option value="ins">Instructor</option>
+                                </select>
+                            </div>
+                        </div>
+
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
@@ -68,6 +82,7 @@
                                 </button>
                             </div>
                         </div>
+
                     </form>
                 </div>
             </div>

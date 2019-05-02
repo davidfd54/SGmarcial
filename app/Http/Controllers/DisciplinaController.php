@@ -6,7 +6,7 @@ use App\Diciplina;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class DiciplinaController extends Controller
+class DisciplinaController extends Controller
 {
     /**
      * Display a listing of the resource.
