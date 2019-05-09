@@ -25,10 +25,10 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  
+
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <!--  <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
@@ -94,25 +94,29 @@
                         @else
                         <li class="nav-item dropdown">
                           <!-- Menu toggle button -->
-                          <a href="#" class="nav-link dropdown-togglem" data-toggle="dropdown">
-                            <i class="fa fa-bell-o"></i>
-                            <span class="label label-warning">10</span>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li class="header">You have 10 notifications</li>
-                            <li>
-                              <!-- Inner Menu: contains the notifications -->
-                              <ul class="menu">
-                                <li><!-- start notification -->
-                                  <a href="#">
-                                    <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                                  </a>
-                                </li>
-                                <!-- end notification -->
-                              </ul>
-                            </li>
-                            <li class="footer"><a href="#">View all</a></li>
-                          </ul>
+                          <li class="dropdown notifications-menu">
+                            <!-- Menu toggle button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  <span class="label label-warning">10</span>
+                              <i class="fa fa-bell-o"></i>
+
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="header">You have 10 notifications</li>
+                              <li>
+                                <!-- Inner Menu: contains the notifications -->
+                                <ul class="menu">
+                                  <li><!-- start notification -->
+                                    <a href="#">
+                                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                    </a>
+                                  </li>
+                                  <!-- end notification -->
+                                </ul>
+                              </li>
+                              <li class="footer"><a href="#">View all</a></li>
+                            </ul>
+                          </li>
                         </li>
 
                         <li class="nav-item dropdown">
