@@ -16,11 +16,11 @@ class CreateMaestrosTable extends Migration
         Schema::create('maestros', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('id_user')->unsigned();
-            $table->bigInteger('id_diciplina')->unsigned();
+            $table->bigInteger('id_disciplina')->unsigned();
 
 
             $table->foreign('id_user')->references('id')->on('users');
-            $table->foreign('id_diciplina')->references('id')->on('diciplinas');
+            $table->foreign('id_disciplina')->references('id')->on('disciplinas');
             $table->timestamps();
         });
     }
