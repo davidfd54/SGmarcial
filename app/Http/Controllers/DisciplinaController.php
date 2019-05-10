@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Diciplina;
+use App\Disciplina;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class DiciplinaController extends Controller
+class DisciplinaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -42,10 +42,10 @@ class DiciplinaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Diciplina  $diciplina
+     * @param  \App\Disciplina  $diciplina
      * @return \Illuminate\Http\Response
      */
-    public function show(Diciplina $diciplina)
+    public function show(Disciplina $disciplina)
     {
         //
     }
@@ -53,10 +53,10 @@ class DiciplinaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Diciplina  $diciplina
+     * @param  \App\Disciplina  $diciplina
      * @return \Illuminate\Http\Response
      */
-    public function edit(Diciplina $diciplina)
+    public function edit(Diciplina $disciplina)
     {
         //
     }
@@ -65,10 +65,10 @@ class DiciplinaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Diciplina  $diciplina
+     * @param  \App\Disciplina  $disciplina
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Diciplina $diciplina)
+    public function update(Request $request, Disciplina $disciplina)
     {
         //
     }
@@ -76,10 +76,10 @@ class DiciplinaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Diciplina  $diciplina
+     * @param  \App\Disciplina  $diciplina
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Diciplina $diciplina)
+    public function destroy(Disciplina $disciplina)
     {
         //
     }
