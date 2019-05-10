@@ -10,13 +10,7 @@
 
 
 
-    <header class="main-header">
 
-      <!--Sidebar toggle button-->
-        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-          <span class="sr-only">Toggle navigation</span>
-        </a>
-    </header>
 
 
     <!-- Left side column. contains the logo and sidebar -->
@@ -33,10 +27,10 @@
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">Gestion </li>
           <!-- Optionally, you can add icons to the links -->
-          <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-          <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+          <li class="active"><a href="#"><i class="fa fa-trophy"></i> <span>Torneos</span></a></li>
+          <li><a href="#"><i class="fa fa-gears"></i> <span>Gestion academia</span></a></li>
           <li class="treeview">
-            <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+            <a href="#"><i class="fa fa-user"></i> <span>Deportistas</span>
               <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
