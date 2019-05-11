@@ -15,7 +15,7 @@ class CreateRegionsTable extends Migration
     {
         Schema::create('regions', function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->BigIncrements('id');
+            $table->BigIncrements('idRegion');
             $table->timestamps();
         });
     }
