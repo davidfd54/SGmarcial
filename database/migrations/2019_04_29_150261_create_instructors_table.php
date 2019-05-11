@@ -21,9 +21,9 @@ class CreateInstructorsTable extends Migration
           $table->bigInteger('id_disciplina')->unsigned();
 
 
-          $table->foreign('id_user')->references('id')->on('users');
+          /*$table->foreign('id_user')->references('id')->on('users');
           $table->foreign('id_disciplina')->references('id')->on('disciplinas');
-
+            */
             $table->timestamps();
         });
     }

@@ -14,7 +14,12 @@ class CreateDisciplinasTable extends Migration
     public function up()
     {
         Schema::create('disciplinas', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->engine = 'InnoDB';
+            $table->bigIncrements('idDisciplina');
+            $table->string('nombreDisciplina');
+            $table->string('gradoDisciplina');
+            $table->string('cinturonDisciplina');
+            $table->text('descripcionDisciplina');
             $table->timestamps();
         });
     }

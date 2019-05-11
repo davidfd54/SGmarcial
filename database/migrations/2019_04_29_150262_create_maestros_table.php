@@ -17,10 +17,11 @@ class CreateMaestrosTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('id_user')->unsigned();
             $table->bigInteger('id_disciplina')->unsigned();
+ 
 
-
-            $table->foreign('id_user')->references('id')->on('users');
+            /*$table->foreign('id_user')->references('id')->on('users');
             $table->foreign('id_disciplina')->references('id')->on('disciplinas');
+            */
             $table->timestamps();
         });
     }
