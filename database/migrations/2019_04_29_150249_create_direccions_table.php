@@ -15,7 +15,7 @@ class CreateDireccionsTable extends Migration
     {
         Schema::create('direccions', function (Blueprint $table) {
               $table->engine = 'InnoDB';
-              $table->bigIncrements('id');
+              $table->bigIncrements('idDireccion');
               $table->string('Calle', 45)->nullable();
 
               $table->bigInteger('idComuna')->unsigned();

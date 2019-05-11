@@ -17,12 +17,12 @@ class CreateAcademiaDeportistasTable extends Migration
               $table->engine = 'InnoDB';
             $table->bigIncrements('id');
 
-
+            /*
             $table->bigInteger('id_Academia')->unsigned();
             $table->foreign('id_Academia')->references('id')->on('academias');
             $table->bigInteger('id_deportista')->unsigned();
             $table->foreign('id_deportista')->references('id')->on('deportistas');
-
+*/
 
 
 

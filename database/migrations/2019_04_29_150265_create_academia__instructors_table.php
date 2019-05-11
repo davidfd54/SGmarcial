@@ -17,12 +17,12 @@ class CreateAcademiaInstructorsTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
 
-
+            /*
             $table->bigInteger('id_Academia')->unsigned();
             $table->foreign('id_Academia')->references('id')->on('academias');
             $table->bigInteger('id_instructor')->unsigned();
             $table->foreign('id_instructor')->references('id')->on('instructors');
-
+            */
         });
     }
 
