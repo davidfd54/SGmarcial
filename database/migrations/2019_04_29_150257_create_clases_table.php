@@ -14,7 +14,13 @@ class CreateClasesTable extends Migration
     public function up()
     {
         Schema::create('clases', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('idClase');
+
+            $table->bigInteger('idDisciplina')->unsigned();
+            $table->bigInteger('idHorarioClase')->unsigned();
+
+            $table->foreign('idDisciplina')->references('idDisciplina')->on('disciplinas');
+            $table->foreign('idHorarioClase')->references('idHorarioClase')->on('Horario_Clases');
             $table->timestamps();
         });
     }
