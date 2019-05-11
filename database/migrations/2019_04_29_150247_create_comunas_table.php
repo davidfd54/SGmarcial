@@ -15,7 +15,7 @@ class CreateComunasTable extends Migration
     {
         Schema::create('comunas', function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->bigIncrements('id');
+            $table->bigIncrements('idComuna');
             $table->timestamps();
         });
     }
