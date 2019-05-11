@@ -19,6 +19,7 @@ class CreateAcademiasTable extends Migration
            $table->string('nombreAcademia');
            $table->char('federada');
            $table->text('DescripcionAcademia');
+           $table->integer('telefonoAcademia');
            /*$table->big_image('imagen1Academia');
            $table->big_image('imagen2Academia');
            $table->big_image('imagen3Academia');
