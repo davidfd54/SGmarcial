@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMaestrosTable extends Migration
+class CreateDeportistasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,21 +13,24 @@ class CreateMaestrosTable extends Migration
      */
     public function up()
     {
-        Schema::create('maestros', function (Blueprint $table) {
+        Schema::create('deportistas', function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->bigIncrements('idMaestro');
-            $table->string('nombreMaestro');
-            $table->string('apellidoMaestro');
-            $table->date('fechaNacimiento');
-            $table->integer('telefonoAcademia');
-            $table->string('correoAcademia');
+            $table->bigIncrements('idDeportista');
+            $table->string('nombreDeportista'); 
+            $table->string('apellidoDeportista');
+            $table->string('rutDeportista');
+            $table->date('fechaNacimientoDeportista');
+            $table->string('sexoDeportista');
+            $table->integer('telefonoDeportista');
+            $table->string('correoDeportista');
 
             $table->bigInteger('idUsuario')->unsigned();
             $table->bigInteger('idDisciplina')->unsigned();
- 
+            $table->bigInteger('idDireccion')->unsigned();
 
             $table->foreign('idUsuario')->references('idUsuario')->on('users');
             $table->foreign('idDisciplina')->references('idDisciplina')->on('disciplinas');
+            $table->foreign('idDireccion')->references('idDireccion')->on('direccions');
             
             $table->timestamps();
         });
@@ -40,6 +43,6 @@ class CreateMaestrosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('maestros');
+        Schema::dropIfExists('deportistas');
     }
 }

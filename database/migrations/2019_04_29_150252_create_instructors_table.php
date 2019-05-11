@@ -21,6 +21,7 @@ class CreateInstructorsTable extends Migration
           $table->string('rutInstructor');
           $table->date('fechaNacimientoInstructor');
           $table->integer('telefonoInstructor');
+          $table->string('correoInstructor');
 
 
           $table->bigInteger('idUsuario')->unsigned();
