@@ -14,7 +14,14 @@ class CreateDeportistaClasesTable extends Migration
     public function up()
     {
         Schema::create('deportista__clases', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->engine = "InnoDB";
+            $table->bigIncrements('idDeportistaClase');
+
+            $table->bigInteger('idDeportista')->unsigned();
+            $table->bigInteger('idClase')->unsigned();
+
+            $table->foreign('idClase')->references('idClase')->on('clases');
+            $table->foreign('idDeportista')->references('idDeportista')->on('deportistas');
             $table->timestamps();
         });
     }
