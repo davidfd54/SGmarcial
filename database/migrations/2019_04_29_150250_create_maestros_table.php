@@ -14,14 +14,19 @@ class CreateMaestrosTable extends Migration
     public function up()
     {
         Schema::create('maestros', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->bigInteger('id_user')->unsigned();
-            $table->bigInteger('id_disciplina')->unsigned();
+            $table->engine = 'InnoDB';
+            $table->bigIncrements('idMaestro');
+            $table->string('nombreMaestro');
+            $table->string('apellidoMaestro');
+            $table->date('fechaNacimiento');
+
+            $table->bigInteger('idUsuario')->unsigned();
+            $table->bigInteger('idDisciplina')->unsigned();
  
 
-            /*$table->foreign('id_user')->references('id')->on('users');
-            $table->foreign('id_disciplina')->references('id')->on('disciplinas');
-            */
+            $table->foreign('idUsuario')->references('idUsuario')->on('users');
+            $table->foreign('idDisciplina')->references('idDisciplina')->on('disciplinas');
+            
             $table->timestamps();
         });
     }

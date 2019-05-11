@@ -18,11 +18,11 @@ class CreateAcademiasTable extends Migration
            $table->bigIncrements('id');
 
 
-           $table->bigInteger('id_direccion')->unsigned();
+        /*$table->bigInteger('id_direccion')->unsigned();
            $table->foreign('id_direccion')->references('id')->on('direccions');
-            $table->bigInteger('id_maestro')->unsigned();
-            $table->foreign('id_maestro')->references('id')->on('maestros');
-
+           $table->bigInteger('id_maestro')->unsigned();
+           $table->foreign('id_maestro')->references('id')->on('maestros');
+        */
 
 
 
