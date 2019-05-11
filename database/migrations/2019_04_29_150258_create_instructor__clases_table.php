@@ -14,7 +14,14 @@ class CreateInstructorClasesTable extends Migration
     public function up()
     {
         Schema::create('instructor__clases', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->engine = "InnoDB";
+            $table->bigIncrements('idInstructorClase');
+
+            $table->bigInteger('idClase')->unsigned();
+            $table->bigInteger('idInstructor')->unsigned();
+
+            $table->foreign('idClase')->references('idClase')->on('clases');
+            $table->foreign('idInstructor')->references('idInstructor')->on('instructors');
             $table->timestamps();
         });
     }
