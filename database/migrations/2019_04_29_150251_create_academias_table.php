@@ -15,7 +15,7 @@ class CreateAcademiasTable extends Migration
     {
         Schema::create('academias', function (Blueprint $table) {
            $table->engine = 'InnoDB';
-           $table->bigIncrements('idAcademias');
+           $table->bigIncrements('idAcademia');
            $table->string('nombreAcademia');
            $table->char('federada');
            $table->text('DescripcionAcademia');

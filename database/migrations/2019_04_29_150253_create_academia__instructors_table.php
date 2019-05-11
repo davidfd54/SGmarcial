@@ -14,15 +14,16 @@ class CreateAcademiaInstructorsTable extends Migration
     public function up()
     {
         Schema::create('academia__instructors', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->engine = 'InnoDB';
+            $table->bigIncrements('idAcademiaInstructor');
 
-            /*
-            $table->bigInteger('id_Academia')->unsigned();
-            $table->foreign('id_Academia')->references('id')->on('academias');
-            $table->bigInteger('id_instructor')->unsigned();
-            $table->foreign('id_instructor')->references('id')->on('instructors');
-            */
+            $table->bigInteger('idInstructor')->unsigned();
+            $table->bigInteger('idAcademia')->unsigned();
+
+            $table->foreign('idAcademia')->references('idAcademia')->on('academias');
+            $table->foreign('idInstructor')->references('idInstructor')->on('instructors');
+            
+            $table->timestamps();
         });
     }
 
