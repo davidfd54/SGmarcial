@@ -18,19 +18,18 @@ class CreateDireccionsTable extends Migration
               $table->bigIncrements('id');
               $table->string('Calle', 45)->nullable();
 
-              $table->bigInteger('id_Comuna')->unsigned();
-              $table->bigInteger('id_Region')->unsigned();
-              $table->bigInteger('id_provincias')->unsigned();
+              $table->bigInteger('idComuna')->unsigned();
+              $table->bigInteger('idRegion')->unsigned();
+              $table->bigInteger('idprovincias')->unsigned();
 
 
 
-              /*$table->foreign('id_Region')->references('id')->on('regions');
-              $table->foreign('id_Comuna')->references('id')->on('comunas');
-
-              $table->foreign('id_provincias')->references('id')->on('provincias');
+              $table->foreign('idRegion')->references('idRegion')->on('regions');
+              $table->foreign('idComuna')->references('idComuna')->on('comunas');
+              $table->foreign('idProvincias')->references('idProvincia')->on('provincias');
 
               $table->timestamps();
-            */ 
+             
 
 
         });

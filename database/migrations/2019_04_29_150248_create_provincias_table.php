@@ -15,7 +15,8 @@ class CreateProvinciasTable extends Migration
     {
         Schema::create('provincias', function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->bigIncrements('id');
+            $table->bigIncrements('idProvincia');
+            $table->string('nombreProvincia');
             $table->timestamps();
         });
     }
