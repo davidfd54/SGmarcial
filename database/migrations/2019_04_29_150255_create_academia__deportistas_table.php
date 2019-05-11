@@ -14,19 +14,14 @@ class CreateAcademiaDeportistasTable extends Migration
     public function up()
     {
         Schema::create('academia__deportistas', function (Blueprint $table) {
-              $table->engine = 'InnoDB';
-            $table->bigIncrements('id');
+            $table->engine = 'InnoDB';
+            $table->bigIncrements('idAcademiaDeportista');
 
-            /*
-            $table->bigInteger('id_Academia')->unsigned();
-            $table->foreign('id_Academia')->references('id')->on('academias');
-            $table->bigInteger('id_deportista')->unsigned();
-            $table->foreign('id_deportista')->references('id')->on('deportistas');
-*/
+            $table->bigInteger('idAcademia')->unsigned();
+            $table->bigInteger('idDeportista')->unsigned();
 
-
-
-
+            $table->foreign('idAcademia')->references('idAcademia')->on('academias');
+            $table->foreign('idDeportista')->references('idDeportista')->on('deportistas');
 
             $table->timestamps();
         });
