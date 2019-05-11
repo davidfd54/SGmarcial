@@ -24,13 +24,13 @@ class CreateDireccionsTable extends Migration
 
 
 
-              $table->foreign('id_Region')->references('id')->on('regions');
+              /*$table->foreign('id_Region')->references('id')->on('regions');
               $table->foreign('id_Comuna')->references('id')->on('comunas');
 
               $table->foreign('id_provincias')->references('id')->on('provincias');
 
               $table->timestamps();
-
+            */ 
 
 
         });
