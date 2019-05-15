@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Disciplina;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Flash;
 
 class DisciplinaController extends Controller
 {
@@ -15,7 +16,8 @@ class DisciplinaController extends Controller
      */
     public function index()
     {
-        //
+      $Disciplina = Disciplina::all();
+      return view('disciplinas.index')->with('disciplinas', $Disciplina);
     }
 
     /**
@@ -25,7 +27,7 @@ class DisciplinaController extends Controller
      */
     public function create()
     {
-        //
+ return view('disciplinas.create');
     }
 
     /**
@@ -36,7 +38,10 @@ class DisciplinaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        Disciplina::create($input);
+        $Disciplina = Disciplina::all();
+        return view('disciplinas.index')->with('disciplinas', $Disciplina);
     }
 
     /**

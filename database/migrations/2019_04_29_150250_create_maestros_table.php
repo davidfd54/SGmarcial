@@ -19,16 +19,14 @@ class CreateMaestrosTable extends Migration
             $table->string('nombreMaestro');
             $table->string('apellidoMaestro');
             $table->date('fechaNacimiento');
-            $table->integer('telefonoAcademia');
-            $table->string('correoAcademia');
 
             $table->bigInteger('idUsuario')->unsigned();
             $table->bigInteger('idDisciplina')->unsigned();
- 
+
 
             $table->foreign('idUsuario')->references('idUsuario')->on('users');
             $table->foreign('idDisciplina')->references('idDisciplina')->on('disciplinas');
-            
+
             $table->timestamps();
         });
     }

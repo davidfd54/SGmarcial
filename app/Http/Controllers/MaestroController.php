@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Disciplina;
 use App\User;
+use Flash;
 class MaestroController extends Controller
 {
     /**
@@ -41,15 +42,31 @@ class MaestroController extends Controller
     public function store(Request $request)
     {
 
-     $Maestro =  Maestro::class;
-     $Maestro->nombreMaestro=$request->$nombreMaestro;
-               $Maestro->apellidoMaestro=$request->$apellidoMaestro;
-               $Maestro->fechaNacimiento=$request->$fechaNacimiento;
-              $Maestro->rut=$request->$rut;
-              $Maestro->idUsuario=$request->$idUsuario;
-              $Maestro->$dDisciplina=$request->$dDisciplina;
-      Maestro::create($maestro);
+
+  $input = $request->only('nombreMaestro','apellidoMaestro','fechaNacimiento','rut','idUsuario','idDisciplina');
+     /*
+$Maestro = new Maestro();
+              $Maestro->nombreMaestro=$request['nombreMaestro'];
+              $Maestro->apellidoMaestro=$request['apellidoMaestro'];
+              $Maestro->fechaNacimiento=$request['fechaNacimiento'];
+              $Maestro->rut=$request['rut'];
+              $Maestro->idUsuario=$request['idUsuario'];
+              $Maestro->idDisciplina=$request['idDisciplina'];
+              $maestro[1]=$request['nombreMaestro'];
+              $maestro[2]=$request['apellidoMaestro'];
+              $maestro[3]=$request['fechaNacimiento'];
+              $maestro[4]=$request['rut'];
+              $maestro[5]=$request['idUsuario'];
+              $maestro[6]=$request['idDisciplina'];*/
+
+
+
+      Maestro::create($input);
+
       Flash::error('Maestro not found');
+
+      $maestro = Maestro::all();
+      return view('maestros.index')->with('maestros', $maestro);
 
     }
 

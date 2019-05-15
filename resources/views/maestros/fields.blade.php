@@ -31,10 +31,7 @@
 
 <!-- Rut Field -->
 
-<div class="form-group col-sm-6">
-    {!! Form::label('rut', 'Rut:') !!}
-    {!! Form::number('rut', null, ['class' => 'form-control']) !!}
-</div>
+
 
 
 <!-- Idusuario Field -->
@@ -53,7 +50,7 @@
 <div class="form-group col-sm-6">
     {!! Form::label('nombreDisciplina', 'Nombredisciplina:') !!}
 
-<input type="text" name="nombreDisciplina" >
+<input type="text" name="nombreDisciplina" class="form-control">
 
 </div>
 

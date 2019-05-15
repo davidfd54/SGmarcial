@@ -9,13 +9,14 @@ class Disciplina extends Model
 
 
   protected $fillable = [
-      'dDisciplina' => 'integer',
-      'nombreDisciplina' => 'string',
-      'gradoDisciplina' => 'string',
-      'cinturonDisciplina' => 'string',
-      'descripcionDisciplina' => 'string'
+      'idDisciplina',
+      'nombreDisciplina',
+      'gradoDisciplina',
+      'cinturonDisciplina',
+      'descripcionDisciplina',
 
   ];
 
+  protected $primaryKey = 'idDisciplina';
 
 }
