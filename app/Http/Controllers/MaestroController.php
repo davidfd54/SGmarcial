@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use App\Maestro;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Disciplina;
+use App\User;
 class MaestroController extends Controller
 {
     /**
@@ -15,7 +16,8 @@ class MaestroController extends Controller
      */
     public function index()
     {
-        //
+      $maestro = Maestro::all();
+      return view('maestros.index')->with('maestros', $maestro);
     }
 
     /**
@@ -25,7 +27,9 @@ class MaestroController extends Controller
      */
     public function create()
     {
-        //
+      $disciplinas = Disciplina::pluck('nombreDisciplina','idDisciplina');
+    $usuarios = User::pluck('name','idUsuario');
+     return view('maestros.create',compact('disciplinas'),compact('usuarios'));
     }
 
     /**
@@ -36,7 +40,17 @@ class MaestroController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+     $Maestro =  Maestro::class;
+     $Maestro->nombreMaestro=$request->$nombreMaestro;
+               $Maestro->apellidoMaestro=$request->$apellidoMaestro;
+               $Maestro->fechaNacimiento=$request->$fechaNacimiento;
+              $Maestro->rut=$request->$rut;
+              $Maestro->idUsuario=$request->$idUsuario;
+              $Maestro->$dDisciplina=$request->$dDisciplina;
+      Maestro::create($maestro);
+      Flash::error('Maestro not found');
+
     }
 
     /**
@@ -47,7 +61,16 @@ class MaestroController extends Controller
      */
     public function show(Maestro $maestro)
     {
-        //
+      $maestro =  Maestro::find($maestro);
+
+      if (empty($maestro)) {
+
+          Flash::error('Maestro not found');
+
+          return redirect(route('maestros.index'));
+      }
+
+      return view('maestros.show')->with('maestro', $maestro);
     }
 
     /**
