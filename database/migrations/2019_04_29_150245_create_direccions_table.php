@@ -16,20 +16,13 @@ class CreateDireccionsTable extends Migration
         Schema::create('direccions', function (Blueprint $table) {
               $table->engine = 'InnoDB';
               $table->bigIncrements('idDireccion');
+              $table->integer('numero');
               $table->string('Calle', 45)->nullable();
-
-              $table->bigInteger('idComuna')->unsigned();
-              $table->bigInteger('idRegion')->unsigned();
-              $table->bigInteger('idprovincias')->unsigned();
-
-
-
-              $table->foreign('idRegion')->references('idRegion')->on('regions');
-              $table->foreign('idComuna')->references('idComuna')->on('comunas');
-              $table->foreign('idProvincias')->references('idProvincia')->on('provincias');
-
+              $table->String('comuna');
+              $table->string('provincia');
+              $table->string('region');
               $table->timestamps();
-             
+
 
 
         });

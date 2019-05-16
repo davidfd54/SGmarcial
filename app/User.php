@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
+use App\CuentaUsuario;
 class User extends Authenticatable
 {
     use Notifiable;
@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'tipoUsuario',
+        'name', 'email','idCuenta', 'password', 'tipoUsuario',
     ];
 
     protected $primaryKey = 'idUsuario';
@@ -38,4 +38,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function CuentaUsuario()
+  {
+    return $this->belongsTo(CuentaUsuario::class, 'idCuenta');
+
+  }
 }

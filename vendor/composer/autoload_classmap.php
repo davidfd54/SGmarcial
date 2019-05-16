@@ -11,6 +11,7 @@ return array(
     'App\\Academia_Instructor' => $baseDir . '/app/Academia_Instructor.php',
     'App\\Categoria_Competencia' => $baseDir . '/app/Categoria_Competencia.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\CuentaUsusario' => $baseDir . '/app/CuentaUsusario.php',
     'App\\Deportista' => $baseDir . '/app/Deportista.php',
     'App\\Deportista_Clase' => $baseDir . '/app/Deportista_Clase.php',
     'App\\Direccion' => $baseDir . '/app/Direccion.php',

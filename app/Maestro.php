@@ -15,7 +15,7 @@ class Maestro extends Model
       'fechaNacimiento',
 
       'idUsuario' ,
-      'idDisciplina',
+      'idDisciplina'
   ];
 
   protected $primaryKey = 'idMaestro';

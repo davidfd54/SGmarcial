@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\region;
+use App\CuentaUsusario;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
-class RegionController extends Controller
+class CuentaUsuarioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -42,10 +41,10 @@ class RegionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\region  $region
+     * @param  \App\CuentaUsusario  $cuentaUsusario
      * @return \Illuminate\Http\Response
      */
-    public function show(region $region)
+    public function show(CuentaUsusario $cuentaUsusario)
     {
         //
     }
@@ -53,10 +52,10 @@ class RegionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\region  $region
+     * @param  \App\CuentaUsusario  $cuentaUsusario
      * @return \Illuminate\Http\Response
      */
-    public function edit(region $region)
+    public function edit(CuentaUsusario $cuentaUsusario)
     {
         //
     }
@@ -65,10 +64,10 @@ class RegionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\region  $region
+     * @param  \App\CuentaUsusario  $cuentaUsusario
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, region $region)
+    public function update(Request $request, CuentaUsusario $cuentaUsusario)
     {
         //
     }
@@ -76,10 +75,10 @@ class RegionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\region  $region
+     * @param  \App\CuentaUsusario  $cuentaUsusario
      * @return \Illuminate\Http\Response
      */
-    public function destroy(region $region)
+    public function destroy(CuentaUsusario $cuentaUsusario)
     {
         //
     }

@@ -42,31 +42,34 @@ class MaestroController extends Controller
     public function store(Request $request)
     {
 
-
-  $input = $request->only('nombreMaestro','apellidoMaestro','fechaNacimiento','rut','idUsuario','idDisciplina');
-     /*
-$Maestro = new Maestro();
-              $Maestro->nombreMaestro=$request['nombreMaestro'];
-              $Maestro->apellidoMaestro=$request['apellidoMaestro'];
-              $Maestro->fechaNacimiento=$request['fechaNacimiento'];
-              $Maestro->rut=$request['rut'];
-              $Maestro->idUsuario=$request['idUsuario'];
-              $Maestro->idDisciplina=$request['idDisciplina'];
-              $maestro[1]=$request['nombreMaestro'];
-              $maestro[2]=$request['apellidoMaestro'];
-              $maestro[3]=$request['fechaNacimiento'];
-              $maestro[4]=$request['rut'];
-              $maestro[5]=$request['idUsuario'];
-              $maestro[6]=$request['idDisciplina'];*/
+  $input2 = $request->only('nombreDisciplina','gradoDisciplina','cinturonDisciplina','descripcionDisciplina');
 
 
 
-      Maestro::create($input);
+  $input2= Disciplina::create($input2);
 
-      Flash::error('Maestro not found');
+  $lastInsertedId=$input2->idDisciplina;
+
+//$input = $request->only('nombreMaestro','apellidoMaestro','fechaNacimiento','idUsuario');
+
+Maestro::create([
+      'nombreMaestro' => $request['nombreMaestro'],
+      'apellidoMaestro' => $request['apellidoMaestro'],
+      'fechaNacimiento' => $request['fechaNacimiento'],
+
+      'idUsuario' =>$request['idUsuario'],
+      'idDisciplina' => $lastInsertedId,
+
+    ]);
+
+      Flash::error('maestro gaurdado');
 
       $maestro = Maestro::all();
       return view('maestros.index')->with('maestros', $maestro);
+
+
+
+
 
     }
 

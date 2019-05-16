@@ -46,32 +46,36 @@
     {!! Form::select('idDisciplina', $disciplinas, null, ['class' => 'form-control']) !!}
 </div>
 
-
+<!-- Nombredisciplina Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('nombreDisciplina', 'Nombredisciplina:') !!}
-
-<input type="text" name="nombreDisciplina" class="form-control">
-
+    {!! Form::text('nombreDisciplina', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Gradodisciplina Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('gradoDisciplina', 'Gradodisciplina:') !!}
-<input type="text" name="gradoDisciplina" value="" class="form-control" >
-
+    {!! Form::text('gradoDisciplina', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Cinturondisciplina Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('cinturonDisciplina', 'Cinturondisciplina:') !!}
-<input type="text" name="'cinturonDisciplina" value="" class="form-control">
+    {!! Form::text('cinturonDisciplina', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Descripciondisciplina Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('descripcionDisciplina', 'Descripciondisciplina:') !!}
-<input type="text" name="descripcionDisciplina" value="" class="form-control">
+    {!! Form::text('descripcionDisciplina', null, ['class' => 'form-control']) !!}
 </div>
+
+
+<!-- Gradodisciplina Field -->
+
+
+<!-- Cinturondisciplina Field -->
+<!-- Descripciondisciplina Field -->
 
 
 <!-- Submit Field -->

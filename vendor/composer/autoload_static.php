@@ -379,6 +379,7 @@ class ComposerStaticInit3ef631186d2db5ab6ec9d5da8a30d118
         'App\\Academia_Instructor' => __DIR__ . '/../..' . '/app/Academia_Instructor.php',
         'App\\Categoria_Competencia' => __DIR__ . '/../..' . '/app/Categoria_Competencia.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\CuentaUsusario' => __DIR__ . '/../..' . '/app/CuentaUsusario.php',
         'App\\Deportista' => __DIR__ . '/../..' . '/app/Deportista.php',
         'App\\Deportista_Clase' => __DIR__ . '/../..' . '/app/Deportista_Clase.php',
         'App\\Direccion' => __DIR__ . '/../..' . '/app/Direccion.php',

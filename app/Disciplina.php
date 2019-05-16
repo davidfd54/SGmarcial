@@ -13,7 +13,7 @@ class Disciplina extends Model
       'nombreDisciplina',
       'gradoDisciplina',
       'cinturonDisciplina',
-      'descripcionDisciplina',
+      'descripcionDisciplina'
 
   ];
 

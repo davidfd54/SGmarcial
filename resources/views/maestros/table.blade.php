@@ -18,7 +18,7 @@
             <td>{!! $maestro->fechaNacimiento !!}</td>
             <td>{!! $maestro->rut !!}</td>
             <td>{!! $maestro->idUsuario !!}</td>
-            <td>{!! $maestro->idDisciplina !!}</td>
+            <td>{!! $maestro->Disciplina->nombreDisciplina !!}</td>
             <td>
                 {!! Form::open(['route' => ['maestros.destroy', $maestro->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\CuentaUsuario;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -49,7 +50,7 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'rut' => ['required', 'string', 'min:8', 'max:10', 'unique:cuenta_usuarios'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
@@ -63,10 +64,28 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+
+
+      $input=CuentaUsuario::create([
+          'rut' => $data['rut'],
+          'nombre1' => $data['nombre1'],
+          'nombre2' => $data['nombre2'],
+          'apellidoM' => $data['apellidoM'],
+          'apellidoP' => $data['apellidoP'],
+          'genero' => $data['genero'],
+          'fechaNacimiento' => $data['fechaNacimiento'],
+          'telefono' => $data['telefono'],
+          'peso' => $data['peso'],
+          'peso' => $data['peso'],
+
+      ]);
+
+      $lastInsertedId=$input->idCuenta;
+
         return User::create([
-            'name' => $data['name'],
+            'idCuenta' =>   $lastInsertedId,
             'email' => $data['email'],
-            'tipoUsuario' => $data['tipoUsuario'],
+            'rol' => null,
             'password' => Hash::make($data['password']),
         ]);
     }
